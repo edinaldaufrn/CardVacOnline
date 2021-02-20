@@ -6,6 +6,7 @@ Ele também é chamando de Repositório de Meta Dados.
 Ele pode ser feito em forma de tabela as tabelas os atributos e os metodos.
 
 ##### D i c i o n a r i o
+##DIcionario
  Tabela           Relacionamento            Tipo de Relacionamento      Descrição
 CartaoSUS    usuario, enfermeira, vacina      cadastro, controle       para cadastrar as vacinas dos usuario do carto SUS
                                                 cadastrar enfermeira, e usuario e as vacinas
