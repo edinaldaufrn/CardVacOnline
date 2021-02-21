@@ -10,21 +10,18 @@
 7.	 Enfermeira trabalha com os cartões do SUS
 8.	 Enfermeira aplica vacina
 ## Perguntas que pode impactar o Modelo:
+1. Não paga para se increver no aplicativo CardVacOnline.
+2. O uso do CardVacOnline é totalmente gratuito.
+3. O CardVacOnilne é para o uso do controle das vacinas que cada pasciente, usuário tomou ou falta tomar, as pendentes.
+4. O CardVacOnline tem o mesmo fim do cartão de vacine impresso.
+5. Cada Usuário tem o seu cartão de vacina online. 
 
 ## Modelo Entidade Relacionamento(MER)
-####[Link para o MER modelo][]
+#### O Modelo Entidade Relacionamento está na pasta DOCS com o nome Modelo ER
 
 ## Modelo Relacional(MR)
-####[Link para o MR modelo][]
+#### O Modelo Relacional está na pasta DOCS com o nome Modelo R
 
 ## Dicionário de Dados
-####[Link para Dicionário de Dados][]
-
-
-# 1
-## 2
-### 3
-#### 4
-##### 5
-###### 6
+#### O Dicionário de Dados está na pasta DOCS com o nome Dicionario de Dados
 
