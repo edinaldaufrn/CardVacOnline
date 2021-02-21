@@ -29,10 +29,10 @@
     <tr >
         <td>Vacina</td>
         <td>Usuario, Enfermeira, Vacina</td>
-        <td>Aplicada, Pendencia</td>
+        <td>Aplicada, Pendente</td>
         <td>A tabela informa as vacinas aplicadas e pendentes</td>
     </tr>
-     <tr >
+    <tr >
         <td>Enfermeira</td>
         <td>CartaoSUS Vacina</td>
         <td>Cadastro</td>
@@ -44,73 +44,201 @@
 
 <table border="2">
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Nome da Coluna</th>
+        <th>Tipo de Dado</th>
+        <th>Comprimento</th>
+        <th>Restrinções</th>
+        <th>Valor Padrão</th>
+        <th>Descrição</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>CPF</td>
+        <td>long Int</td>
+        <td>24 bytes</td>
+        <td>Pk, NOT NULL</td>
+        <td>N/D</td>
+        <td>Número do CPF do Usuário</td>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>Nome</td>
+        <td>Caracteres</td>
+        <td>80 Bytes</td>
+        <td>NOT NULL</td>
+        <td>N/D</td>
+        <td>Nome do us</td>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>Fone</td>
+        <td>int</td>
+        <td>16 bytes</td>
+        <td></td>
+        <td>N/D</td>
+        <td>Fone para contato</td>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>E-mail</td>
+        <td>Caracteres</td>
+        <td>40 bytes</td>
+        <td></td>
+        <td>N/D</td>
+        <td>e-mail para contato</td>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>Nº Cartao SUS</td>
+        <td>Long int</td>
+        <td>16 Bytes</td>
+        <td>Fk</td>
+        <td>N/D</td>
+        <td>Nº do cartão do SUS</td>
+    </tr>
+</table>
+#### Total de Dados para cada Registro: 160 Bytes
+
+### Dicionário de Dados: Tabela para Vacina
+
+<table border="2">
+    <tr>
+        <th>Nome da Coluna</th>
+        <th>Tipo de Dado</th>
+        <th>Comprimento</th>
+        <th>Restrinções</th>
+        <th>Valor Padrão</th>
+        <th>Descrição</th>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>Data</td>
+        <td>Data</td>
+        <td>8 Bytes</td>
+        <td>NOT NULL</td>
+        <td>N/D</td>
+        <td>Data da aplicação da vacina</td>
     </tr>
     <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <td>Nome</td>
+        <td>Caracteres</td>
+        <td>80 Bytes</td>
+        <td>NOT NULL</td>
+        <td>N/D</td>
+        <td>Nome da vacina</td>
+    </tr>
+    <tr>
+        <td>Codigo</td>
+        <td>int</td>
+        <td>16 Bytes</td>
+        <td>PK, NOT NULL</td>
+        <td>N/D</td>
+        <td>Código gereado Altomaticamente</td>
+    </tr>
+    <tr>        
+        <td>Pendente</td>
+        <td>Caracteres</td>
+        <td>40 Bytes</td>
+        <td></td>
+        <td>N/D</td>
+        <td>Data de vacina pendente</td>
+    </tr>
+    <tr>
+        <td>COREN</td>
+        <td>int</td>
+        <td>8 Bytes</td>
+        <td>FK</td>
+        <td>N/D</td>
+        <td>Codigo do enfermeiro</td>
+    </tr>
+    <tr>
+        <td>NºCartaoSUS</td>
+        <td>long int</td>
+        <td>16 Bytes</td>
+        <td>FK</td>
+        <td>N/D</td>
+        <td>Número do Cartão do SUS</td>
+    </tr>
+    <tr>
+        <td>CPF Usuario</td>
+        <td>lon int</td>
+        <td>16 Bytes</td>
+        <td>FK</td>
+        <td>N/D</td>
+        <td>Número do CPF do Usuário</td>
     </tr>
 </table>
 
-### Dicionário de Dados Modelo Entidade Relacionamento para Vacina
+#### Total de Dados para cada Registro: 144 Bytes
 
-### Dicionário de Dados Modelo Entidade Relacionamento para Enfermeira
+### Dicionário de Dados: Tabela para Enfermeira
 
-### Dicionário de Dados Modelo Entidade Relacionamento para EnfermeiraSUS
+<table border="2">
+    <tr>
+        <th>Nome da Coluna</th>
+        <th>Tipo de Dado</th>
+        <th>Comprimento</th>
+        <th>Restrinções</th>
+        <th>Valor Padrão</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>COREN</td>
+        <td>int</td>
+        <td>16 Bytes</td>
+        <td>PK, NOT NULL</td>
+        <td>N/D</td>
+        <td>Código de enfermeira</td>
+    </tr>
+    <tr>
+        <td>Nome</td>
+        <td>Caracteres</td>
+        <td>80 Bytes</td>
+        <td>NOT NULL</td>
+        <td>N/D</td>
+        <td>Nome da vacina</td>
+    </tr>
+    <tr>
+        <td>E-mail</td>
+        <td>Caracteres</td>
+        <td>40 Bytes</td>
+        <td></td>
+        <td>N/D</td>
+        <td>E-mail para contato</td>
+    </tr>
+    <tr>
+        <td>Fone</td>
+        <td>lon int</td>
+        <td>16 Bytes</td>
+        <td>NOT NULL</td>
+        <td></td>
+        <td>Fone para contato</td>
+    </tr>
+</table>
+
+#### Total de Dados para cada Registro: 152 Bytes
+
+### Dicionário de Dados: Tabela para EnfermeiraSUS
+
+ <table border="2">
+    <tr>
+        <th>Nome da Coluna</th>
+        <th>Tipo de Dado</th>
+        <th>Comprimento</th>
+        <th>Restrinções</th>
+        <th>Valor Padrão</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>COREN</td>
+        <td>int</td>
+        <td>16 Bytes</td>
+        <td>PK, FK</td>
+        <td>N/D</td>
+        <td>Código de enfermeira</td>
+    </tr>
+    <tr>
+        <td>CartaoSUS</td>
+        <td>log int</td>
+        <td>16 Bytes</td>
+        <td>PK, FK</td>
+        <td>N/D</td>
+        <td>Número do Cartão do SUS</td>
+    </tr>
+</table>
+
+#### Total de Dados para cada Registro: 24 Bytes
