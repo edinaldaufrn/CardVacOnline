@@ -11,8 +11,14 @@
 8.	 Enfermeira aplica vacina
 ## Perguntas que pode impactar o Modelo:
 
+## Modelo Entidade Relacionamento(MER)
+####[Link para o MER modelo][]
+
 ## Modelo Relacional(MR)
 ####[Link para o MR modelo][]
+
+## Dicionário de Dados
+####[Link para Dicionário de Dados][]
 
 
 # 1
