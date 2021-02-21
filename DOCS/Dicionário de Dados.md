@@ -1,4 +1,4 @@
-# Aqui é o Dicionário de Dados do CardVacOnline
+# Dicionário de Dados do CardVacOnline
 #### O Dicionário de Dados é um documento usado para armazenar informações sobre o conteúdo, formato e a estrutura de um
 #### Banco de Dados, assim como os relacionamentos entre os seus elementos.
 #### É importante manter um Dicionário de Dados para limitar erros ao criar a estrutura física do Banco de Dados no Computador.
@@ -92,6 +92,7 @@
         <td>Nº do cartão do SUS</td>
     </tr>
 </table>
+
 #### Total de Dados para cada Registro: 160 Bytes
 
 ### Dicionário de Dados: Tabela para Vacina
